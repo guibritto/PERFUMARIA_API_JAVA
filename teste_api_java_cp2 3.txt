@@ -1,0 +1,296 @@
+/---------------------------POST PERFUMARIA-------------------------------/
+POST Adicionar uma nova Perfumaria:
+
+{
+  "nome": "Essência Brasileira",
+  "localizacao": "Av. Paulista, 1000 - São Paulo, SP"
+}
+
+{
+  "nome": "Aroma Lux",
+  "localizacao": "Rua das Rosas, 45 - Curitiba, PR"
+}
+
+{
+  "nome": "Fragrance Lab",
+  "localizacao": "Alameda dos Anjos, 500 - Belo Horizonte, MG"
+}
+
+
+
+
+
+
+
+
+/---------------------------POST PRODUTO------------------------------------/
+
+POST Adicionar 1 Produto:
+{
+  "nome": "Essencial Intenso",
+  "localArmazenado": "Estoque C",
+  "categoria": "PERFUME",
+  "preco": 120.5,
+  "marca": "Natura",
+  "descricao": "Perfume amadeirado masculino com alta fixação.",
+  "quantidade": 10,
+  "perfumaria": 1
+}
+
+
+
+
+
+
+
+
+
+/---------------------------POST PRODUTO--------------------------------------/
+
+POST Adicionar mais de 1 Produto:
+[
+  {
+    "nome": "Floratta Blue",
+    "localArmazenado": "Prateleira 1",
+    "categoria": "COLONIA",
+    "preco": 89.9,
+    "marca": "O Boticário",
+    "descricao": "Colônia floral fresca para o dia a dia.",
+    "quantidade": 7,
+    "perfumaria": 2
+  },
+  {
+    "nome": "Aqua Energy",
+    "localArmazenado": "Depósito B",
+    "categoria": "COLONIA",
+    "preco": 55.0,
+    "marca": "Avon",
+    "descricao": "Colônia energizante com notas cítricas e mentoladas.",
+    "quantidade": 0,
+    "perfumaria": 3
+  },
+  {
+    "nome": "Egeo Dolce",
+    "localArmazenado": "Prateleira 2",
+    "categoria": "PERFUME",
+    "preco": 119.9,
+    "marca": "O Boticário",
+    "descricao": "Perfume doce e envolvente com notas de baunilha.",
+    "quantidade": 5,
+    "perfumaria": 1
+  },
+  {
+    "nome": "Natura Una Base",
+    "localArmazenado": "Gaveta 1",
+    "categoria": "BASE",
+    "preco": 75.0,
+    "marca": "Natura",
+    "descricao": "Base líquida de alta cobertura com acabamento matte.",
+    "quantidade": 3,
+    "perfumaria": 1
+  },
+  {
+    "nome": "Make B. Batom Matte",
+    "localArmazenado": "Gaveta 3",
+    "categoria": "BATOM",
+    "preco": 39.9,
+    "marca": "O Boticário",
+    "descricao": "Batom matte de longa duração e alta pigmentação.",
+    "quantidade": 0,
+    "perfumaria": 2
+  },
+  {
+    "nome": "Renew Serum Vitamina C",
+    "localArmazenado": "Prateleira 4",
+    "categoria": "SERUM",
+    "preco": 98.5,
+    "marca": "Avon",
+    "descricao": "Sérum facial com vitamina C pura para revitalização da pele.",
+    "quantidade": 2,
+    "perfumaria": 3
+  },
+  {
+    "nome": "Cuide-se Bem Sabonete",
+    "localArmazenado": "Depósito A",
+    "categoria": "SABONETE",
+    "preco": 12.9,
+    "marca": "O Boticário",
+    "descricao": "Sabonete hidratante com fragrância suave.",
+    "quantidade": 10,
+    "perfumaria": 2
+  },
+  {
+    "nome": "Tododia Hidratante",
+    "localArmazenado": "Estoque Central",
+    "categoria": "HIDRATANTE",
+    "preco": 34.0,
+    "marca": "Natura",
+    "descricao": "Hidratante corporal com toque seco e rápida absorção.",
+    "quantidade": 6,
+    "perfumaria": 1
+  },
+  {
+    "nome": "Advance Techniques Shampoo",
+    "localArmazenado": "Depósito C",
+    "categoria": "SHAMPOO",
+    "preco": 22.5,
+    "marca": "Avon",
+    "descricao": "Shampoo revitalizante para cabelos normais.",
+    "quantidade": 8,
+    "perfumaria": 3
+  },
+  {
+    "nome": "Color Trend Máscara de Cílios",
+    "localArmazenado": "Gaveta 2",
+    "categoria": "MASCARA_CILIOS",
+    "preco": 19.99,
+    "marca": "Avon",
+    "descricao": "Máscara para cílios com efeito volume instantâneo.",
+    "quantidade": 0,
+    "perfumaria": 3
+  },
+  {
+    "nome": "Natura Ekos Óleo Corporal",
+    "localArmazenado": "Prateleira 5",
+    "categoria": "OLEO_CORPORAL",
+    "preco": 49.9,
+    "marca": "Natura",
+    "descricao": "Óleo corporal nutritivo com aroma de castanha.",
+    "quantidade": 9,
+    "perfumaria": 1
+  },
+  {
+    "nome": "Sophie Esmalte Rosa",
+    "localArmazenado": "Prateleira de Unhas",
+    "categoria": "ESMALTE",
+    "preco": 6.5,
+    "marca": "O Boticário",
+    "descricao": "Esmalte infantil hipoalergênico e colorido.",
+    "quantidade": 4,
+    "perfumaria": 2
+  },
+  {
+    "nome": "Barber Club Pós-Barba",
+    "localArmazenado": "Seção Masculina",
+    "categoria": "POS_BARBA",
+    "preco": 29.9,
+    "marca": "L'Oréal",
+    "descricao": "Loção pós-barba calmante com fragrância amadeirada.",
+    "quantidade": 1,
+    "perfumaria": 2
+  },
+  {
+    "nome": "Vela Aromática Lavanda",
+    "localArmazenado": "Ambiente",
+    "categoria": "VELA",
+    "preco": 24.9,
+    "marca": "Quem Disse, Berenice?",
+    "descricao": "Vela aromática com fragrância relaxante de lavanda.",
+    "quantidade": 2,
+    "perfumaria": 3
+  },
+  {
+    "nome": "Kit Presente Natura Homem",
+    "localArmazenado": "Kits Prontos",
+    "categoria": "KIT",
+    "preco": 129.9,
+    "marca": "Natura",
+    "descricao": "Kit com perfume, pós-barba e hidratante.",
+    "quantidade": 5,
+    "perfumaria": 1
+  }
+]
+
+
+
+
+
+
+/------------------------------GET PRODUTO--------------------------------/
+
+GET Listar Produtos da página 1
+
+/-----------------------------------------------------------------/
+
+GET Listar Produtos da página 2
+
+/-----------------------------------------------------------------/
+
+GET Listar Produto por ID ok
+
+/-----------------------------------------------------------------/
+
+GET Listar Produtos pro Categoria ok
+
+
+
+
+
+
+
+
+/-------------------------------GET PERFUMARIA----------------------------------/
+
+GET Listar todas as Perfumarias
+
+/-----------------------------------------------------------------/
+
+GET Listar Perfumarias por ID ok
+
+/-----------------------------------------------------------------/
+
+GET Listar Produtos em uma Perfumaria por ID ok
+
+/-----------------------------------------------------------------/
+
+GET Listar Produtos de uma Categoria em uma Perfumaria por ID ok	
+
+/-----------------------------------------------------------------/
+
+GET Listar Produto por ID em uma Perfumaria por ID ok
+
+
+
+
+
+
+
+
+
+/-------------------------------PUT PERFUMARIA---------------------------------/
+
+PUT Atualizar Perfumaria por ID:
+ {
+  "nome": "Essência Brasileira Atualizada",
+  "localizacao": "Av. Paulista, 1001 - São Paulo, SP"
+}
+
+/-------------------------------PUT PRODUTO----------------------------------/
+
+PUT Atualizar Produtos por ID:
+{
+  "nome": "Essencial Intenso Atualizado",
+  "localArmazenado": "Estoque B",
+  "categoria": "PERFUME",
+  "preco": 135.0,
+  "marca": "Natura",
+  "descricao": "Versão reformulada com notas mais intensas.",
+  "quantidade": 15,
+  "perfumaria": 1
+}
+
+
+
+
+
+
+
+
+/--------------------------------DELETE PRODUTO---------------------------------/
+
+DELETE Deletar Produto por ID ok
+
+/-------------------------------DELETE PERFUMARIA----------------------------------/
+
+DELETE Deletar Perfumaria por ID
+
