@@ -44,7 +44,7 @@ public class PerfumariaController {
 
     // Criação de uma nova perfumaria
     @PostMapping
-    @Operation(summary = "Cria uma nova perfumaria")
+    @Operation(summary = "Adicionar uma nova perfumaria")
     @ApiResponses({
             @ApiResponse(responseCode = "201", description = "Perfumaria criada com sucesso"),
             @ApiResponse(responseCode = "400", description = "Parâmetros inválidos")
@@ -74,6 +74,7 @@ public class PerfumariaController {
     }
 
     // Listar todos os produtos de uma perfumaria específica
+    @Operation(summary = "Listar Produtos em uma Perfumaria por ID")
     @GetMapping("/{id}/produtos")
     public ResponseEntity<List<ProdutoResponse>> listarProdutosDaPerfumaria(@PathVariable Long id) {
         List<Produto> produtos = produtoRepository.findByPerfumariaId(id);
@@ -81,6 +82,7 @@ public class PerfumariaController {
     }
 
     // Listar produtos de uma perfumaria por categoria (enum Categoria no path)
+    @Operation(summary = "Listar Produtos de uma Categoria em uma Perfumaria por ID")
     @GetMapping("/{id}/produtos/categoria/{categoria}")
     public ResponseEntity<List<ProdutoResponse>> listarPorCategoriaDaPerfumaria(
             @PathVariable Long id,
@@ -90,6 +92,7 @@ public class PerfumariaController {
     }
 
     // Buscar produto específico dentro de uma perfumaria
+    @Operation(summary = "Listar Produto por ID em uma Perfumaria por ID")
     @GetMapping("/{id}/produtos/{idProduto}")
     public ResponseEntity<ProdutoResponse> buscarProdutoPorIdDaPerfumaria(
             @PathVariable Long id,

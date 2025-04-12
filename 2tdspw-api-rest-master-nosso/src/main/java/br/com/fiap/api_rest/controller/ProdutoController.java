@@ -53,6 +53,7 @@ public class ProdutoController {
         return new ResponseEntity<>(produtoService.save(produto), HttpStatus.CREATED);
     }
 
+    @Operation(summary = "Registrar novos produtos em lote")
     @PostMapping("/lote")
     public ResponseEntity<List<ProdutoResponse>> createMultiplos(@Valid @RequestBody List<ProdutoRequest> produtosRequest) {
         List<ProdutoResponse> responses = new ArrayList<>();
