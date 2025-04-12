@@ -294,3 +294,7 @@ DELETE Deletar Produto por ID ok
 
 DELETE Deletar Perfumaria por ID
 
+
+
+
+http://localhost:8080/swagger-ui/index.html
