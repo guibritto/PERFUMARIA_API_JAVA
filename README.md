@@ -23,7 +23,7 @@ Com esta API, perfumarias podem:
 - **Spring Data JPA**
 - **Hibernate**
 - **Swagger OpenAPI 3 (Documentação automática)**
-- **Banco de Dados Relacional (MySQL, Oracle ou PostgreSQL compatível)**
+- **Banco de Dados Relacional H2**
 - **Bean Validation (Jakarta Validation)**
 - **Arquitetura em camadas (Controller, Service, Repository, DTO, Mapper)**
 
